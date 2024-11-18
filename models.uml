@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.scaler.bookmyshow.models</OriginalElement>
+  <nodes>
+    <node x="655.9796131426517" y="276.2023470543111">com.scaler.bookmyshow.models.Theatre</node>
+    <node x="1662.821549898841" y="266.09637684164545">com.scaler.bookmyshow.models.BookingStatus</node>
+    <node x="870.7051242162084" y="-13.94931137027676">com.scaler.bookmyshow.models.ScreenType</node>
+    <node x="1111.915183626782" y="66.25870654031154">com.scaler.bookmyshow.models.Cast</node>
+    <node x="1134.7781842215818" y="385.9088203168544">com.scaler.bookmyshow.models.ShowSeat</node>
+    <node x="425.09039865878634" y="383.0556750404452">com.scaler.bookmyshow.models.ShowSeatState</node>
+    <node x="950.9817208523477" y="292.1612418186703">com.scaler.bookmyshow.models.User</node>
+    <node x="1338.8977087299968" y="4.448231549820463">com.scaler.bookmyshow.models.ShowSeatType</node>
+    <node x="598.2047366937032" y="111.75605756963856">com.scaler.bookmyshow.models.City</node>
+    <node x="-101.04935020910222" y="351.6951850866689">com.scaler.bookmyshow.models.CreditCardPayment</node>
+    <node x="244.5812194460321" y="346.1095398882696">com.scaler.bookmyshow.models.Payment</node>
+    <node x="851.4389665952568" y="74.50685964041652">com.scaler.bookmyshow.models.Auditorium</node>
+    <node x="1321.3210852636037" y="162.26255954883854">com.scaler.bookmyshow.models.Show</node>
+    <node x="1649.3018580783664" y="386.1862705725984">com.scaler.bookmyshow.models.Booking</node>
+    <node x="164.02326242857146" y="442.76840518160554">com.scaler.bookmyshow.models.PaymentStatus</node>
+    <node x="132.1294933622473" y="248.0631855652211">com.scaler.bookmyshow.models.PaymentMethod</node>
+    <node x="370.69433034460206" y="209.9094966436278">com.scaler.bookmyshow.models.Seat</node>
+    <node x="1105.6324557509488" y="157.1078544405018">com.scaler.bookmyshow.models.Movie</node>
+    <node x="338.6590522657174" y="74.18989517277073">com.scaler.bookmyshow.models.SeatType</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.scaler.bookmyshow.models.ShowSeat" target="com.scaler.bookmyshow.models.ShowSeatState" relationship="TO_ONE">
+      <point x="-89.5" y="15.859584864751127" />
+      <point x="510.09039865878634" y="450.26840518160554" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="com.scaler.bookmyshow.models.Auditorium" target="com.scaler.bookmyshow.models.Seat" relationship="TO_MANY">
+      <point x="3.340474313517916E-5" y="70.50014035958348" />
+      <point x="948.439" y="255.0" />
+      <point x="587.59" y="255.0" />
+      <point x="587.59" y="283.702" />
+      <point x="83.49966965539791" y="36.29250335637221" />
+    </edge>
+    <edge source="com.scaler.bookmyshow.models.CreditCardPayment" target="com.scaler.bookmyshow.models.Payment" relationship="GENERALIZATION">
+      <point x="102.5" y="-18.085645198399334" />
+      <point x="-59.0" y="0.0" />
+    </edge>
+    <edge source="com.scaler.bookmyshow.models.ShowSeatType" target="com.scaler.bookmyshow.models.SeatType" relationship="TO_ONE">
+      <point x="-83.49970872999677" y="-4.189231549820462" />
+      <point x="502.159" y="48.759" />
+      <point x="502.159" y="180.0" />
+      <point x="411.659" y="180.0" />
+      <point x="-5.2265717364718967E-5" y="37.500104827229265" />
+    </edge>
+    <edge source="com.scaler.bookmyshow.models.Booking" target="com.scaler.bookmyshow.models.Show" relationship="TO_ONE">
+      <point x="-116.49985807836651" y="-2.7057259842422354E-4" />
+      <point x="1626.0" y="467.686" />
+      <point x="1626.0" y="243.763" />
+      <point x="140.49991473639625" y="4.404511614666262E-4" />
+    </edge>
+    <edge source="com.scaler.bookmyshow.models.Theatre" target="com.scaler.bookmyshow.models.City" relationship="TO_ONE">
+      <point x="-78.27487644894848" y="-59.5" />
+      <point x="0.0" y="48.5" />
+    </edge>
+    <edge source="com.scaler.bookmyshow.models.Show" target="com.scaler.bookmyshow.models.Movie" relationship="TO_ONE">
+      <point x="-140.5" y="-49.154705108336756" />
+      <point x="77.5" y="0.0" />
+    </edge>
+    <edge source="com.scaler.bookmyshow.models.Payment" target="com.scaler.bookmyshow.models.PaymentMethod" relationship="TO_ONE">
+      <point x="-0.9517260837847914" y="-14.0" />
+      <point x="81.5" y="14.0" />
+    </edge>
+    <edge source="com.scaler.bookmyshow.models.Auditorium" target="com.scaler.bookmyshow.models.Theatre" relationship="TO_ONE">
+      <point x="-96.99996659525681" y="1.4035958348301847E-4" />
+      <point x="822.0" y="145.007" />
+      <point x="822.0" y="226.256" />
+      <point x="772.98" y="226.256" />
+      <point x="3.868573483032378E-4" y="-59.50034705431108" />
+    </edge>
+    <edge source="com.scaler.bookmyshow.models.Show" target="com.scaler.bookmyshow.models.ShowSeat" relationship="TO_MANY">
+      <point x="46.67891473639634" y="81.50044045116147" />
+      <point x="1508.5" y="419.409" />
+      <point x="89.49981577841811" y="-14.999820316854425" />
+    </edge>
+    <edge source="com.scaler.bookmyshow.models.Theatre" target="com.scaler.bookmyshow.models.Auditorium" relationship="TO_MANY">
+      <point x="117.0003868573483" y="-3.470543110779545E-4" />
+      <point x="933.439" y="335.702" />
+      <point x="-14.999966595256865" y="70.50014035958348" />
+    </edge>
+    <edge source="com.scaler.bookmyshow.models.Movie" target="com.scaler.bookmyshow.models.Cast" relationship="TO_MANY">
+      <point x="-28.217272124166925" y="-37.5" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="com.scaler.bookmyshow.models.Booking" target="com.scaler.bookmyshow.models.Payment" relationship="TO_MANY">
+      <point x="-116.5" y="62.722549744256014" />
+      <point x="349.52326242857146" y="530.4088203168544" />
+      <point x="45.94204298253936" y="14.0" />
+    </edge>
+    <edge source="com.scaler.bookmyshow.models.ShowSeat" target="com.scaler.bookmyshow.models.Show" relationship="TO_ONE">
+      <point x="89.49981577841811" y="1.7968314557492704E-4" />
+      <point x="1626.0" y="434.409" />
+      <point x="1626.0" y="243.763" />
+      <point x="140.49991473639625" y="4.404511614666262E-4" />
+    </edge>
+    <edge source="com.scaler.bookmyshow.models.Show" target="com.scaler.bookmyshow.models.ShowSeatType" relationship="TO_MANY">
+      <point x="-39.42337653360687" y="-81.5" />
+      <point x="0.0" y="48.5" />
+    </edge>
+    <edge source="com.scaler.bookmyshow.models.ShowSeatType" target="com.scaler.bookmyshow.models.Show" relationship="TO_ONE">
+      <point x="83.50029127000312" y="-2.3154982046236228E-4" />
+      <point x="1626.0" y="52.948" />
+      <point x="1626.0" y="243.763" />
+      <point x="140.49991473639625" y="4.404511614666262E-4" />
+    </edge>
+    <edge source="com.scaler.bookmyshow.models.Show" target="com.scaler.bookmyshow.models.Auditorium" relationship="TO_ONE">
+      <point x="-8.526360375071818E-5" y="81.50044045116147" />
+      <point x="1461.821" y="366.0" />
+      <point x="933.439" y="366.0" />
+      <point x="-14.999966595256865" y="70.50014035958348" />
+    </edge>
+    <edge source="com.scaler.bookmyshow.models.Auditorium" target="com.scaler.bookmyshow.models.ScreenType" relationship="TO_ONE">
+      <point x="-7.733842379048383" y="-70.5" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="com.scaler.bookmyshow.models.Booking" target="com.scaler.bookmyshow.models.BookingStatus" relationship="TO_ONE">
+      <point x="15.000141921633485" y="-81.5" />
+      <point x="35.980450101158794" y="14.0" />
+    </edge>
+    <edge source="com.scaler.bookmyshow.models.ShowSeat" target="com.scaler.bookmyshow.models.Seat" relationship="TO_ONE">
+      <point x="-1.842215818896875E-4" y="-48.499820316854425" />
+      <point x="1224.278" y="255.0" />
+      <point x="587.59" y="255.0" />
+      <point x="587.59" y="283.702" />
+      <point x="83.49966965539791" y="36.29250335637221" />
+    </edge>
+    <edge source="com.scaler.bookmyshow.models.Seat" target="com.scaler.bookmyshow.models.SeatType" relationship="TO_ONE">
+      <point x="-3.303446020765932E-4" y="-37.5004966436278" />
+      <point x="454.194" y="180.0" />
+      <point x="411.659" y="180.0" />
+      <point x="-5.2265717364718967E-5" y="37.500104827229265" />
+    </edge>
+    <edge source="com.scaler.bookmyshow.models.Booking" target="com.scaler.bookmyshow.models.User" relationship="TO_ONE">
+      <point x="-116.5" y="47.722549744256014" />
+      <point x="1012.4817208523477" y="515.4088203168544" />
+      <point x="0.0" y="26.5" />
+    </edge>
+    <edge source="com.scaler.bookmyshow.models.Booking" target="com.scaler.bookmyshow.models.ShowSeat" relationship="TO_MANY">
+      <point x="1.4192163348525355E-4" y="-81.50027057259842" />
+      <point x="1765.802" y="346.0" />
+      <point x="1508.5" y="346.0" />
+      <point x="1508.5" y="419.409" />
+      <point x="89.49981577841811" y="-14.999820316854425" />
+    </edge>
+    <edge source="com.scaler.bookmyshow.models.City" target="com.scaler.bookmyshow.models.Theatre" relationship="TO_MANY">
+      <point x="96.50026330629674" y="-5.7569638556742575E-5" />
+      <point x="822.0" y="160.256" />
+      <point x="822.0" y="226.256" />
+      <point x="772.98" y="226.256" />
+      <point x="3.868573483032378E-4" y="-59.50034705431108" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.6184538653366584" showDependencies="true" x="900.5" y="277.99999999999994" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
